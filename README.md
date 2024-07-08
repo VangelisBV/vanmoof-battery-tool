@@ -27,10 +27,10 @@ This Python script scans for available serial ports, prompts the user to select 
 ## Installation
 
 1. **Install Python:**
-If you don't have Python installed already, download and install it from the official [website](https://www.python.org/downloads/).
+If you don't have Python installed already, download and install from the official [website](https://www.python.org/downloads/).
 
 2. **Clone the repository:**
-If you haave Git installed:
+    If you have Git installed:
    ```sh
    git clone https://github.com/VangelisBV/vanmoof-battery-tool.git
    # Then enter the directory
@@ -40,7 +40,7 @@ If you don't have git installed:
 - Click on the "Code" button and download the repository as a zip file, then unzip it
 - Open a terminal window and enter the directory, for example on Windows:
     ```sh
-    cd C:\Users\YourUser\Downloads\vanmoof-battery-tool-main #Assuming you extracted the file in the Downloads file
+    cd C:\Users\YourUser\Downloads\vanmoof-battery-tool-main #Assuming you extracted the file in the Downloads directory
 
 3. **Create a virtual environment (optional but recommended):**
     ```sh
@@ -68,11 +68,11 @@ If you don't have git installed:
 
 4. **"Wake up" the battery:**
 The script will ask you to momentarily bridge the DET and the TEST pins of the battery 
-(Note: This will "activate" the battery for 10sec, meaning the discharge pins will have voltage)
+(Note: This will "activate" the battery for 10sec, meaning the discharge pins will have voltage for 10sec)
 <image>
 
 5. **Read the results:**
-The register values are transformed, renamed and then the results are displayed.
+The registers values are transformed, renamed and then the results are displayed.
 
 
 ## Example Output
@@ -125,12 +125,13 @@ Research to expand the tool is ongoing and contributions are welcome! Please fee
 
 
 ## Acknowledgments
-- [PySerial] (https://github.com/pyserial/pyserial)
-- [PyModbus] (https://github.com/pymodbus-dev/pymodbus)
+- [PySerial](https://github.com/pyserial/pyserial)
+- [PyModbus](https://github.com/pymodbus-dev/pymodbus)
 
 
 ## Disclaimer
 This software is provided "as is". The authors make no representations or warranties of any kind concerning the safety, suitability, inaccuracies or other harmful components of this software. The authors will not be liable for any damages you may suffer in connection with using, modifying, or distributing this software.
+
 **Use this software at your own risk.** This project is intended for research purposes only. 
 
-**Please note that register naming and transformations have been done based on my own research and no information has been provided by VM.**
+**Please note that registers naming and transformations have been done based on my own research and no information has been provided by VM.**
