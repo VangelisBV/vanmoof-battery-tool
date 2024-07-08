@@ -1,4 +1,4 @@
-def display_v(height):
+def display_v(height: int):
     """
     Displays a static 'V' shape with the given height.
 

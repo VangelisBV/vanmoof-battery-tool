@@ -11,7 +11,7 @@ def list_serial_ports():
     return serial.tools.list_ports.comports()
 
 
-def print_serial_ports(ports):
+def print_serial_ports(ports: list):
     """
     Prints the list of available serial ports.
 
@@ -23,7 +23,7 @@ def print_serial_ports(ports):
     print()
 
 
-def choose_serial_port(ports):
+def choose_serial_port(ports: list) -> str:
     """
     Prompts the user to choose a serial port from the list.
 

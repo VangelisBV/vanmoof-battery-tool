@@ -4,7 +4,7 @@ from modbus_utils import read_modbus_registers
 from serial_utils import list_serial_ports, print_serial_ports, choose_serial_port
 from transform_utils import transform_and_rename_registers, REGISTER_NAMES, UNITS
 
-def read_from_serial(port_name):
+def read_from_serial(port_name: str):
     """
     Reads data from the selected serial port.
 

@@ -1,6 +1,5 @@
 REGISTER_NAMES = {
     0: "Errors:",
-    1: "Temperature:",
     2: "Voltage:",
     3: "SOC:",
     10: "ESN:",
@@ -23,7 +22,6 @@ REGISTER_NAMES = {
 }
 UNITS = {
     0: "",
-    1: "",
     2: "Volt",
     3: "%",
     10: "",
@@ -45,7 +43,7 @@ UNITS = {
     40: "V"
 }
 
-def transform_data(index, value):
+def transform_data(index: int, value: int) -> float:
     """
     Transforms the register data based on the index.
 
@@ -63,12 +61,12 @@ def transform_data(index, value):
             return bytearray([value >> 8, value & 0xFF]).decode("ascii")
         except Exception as e:
             return f"Invalid ASCII value: {e}"
-    elif index in [4, 5, 6, 7, 8, 9, 17, 18]:
+    elif index in [2, 4, 5, 6, 7, 8, 9, 17, 18]:
         return None
     return value
 
 
-def decode_errors(error_code):
+def decode_errors(error_code: int) -> str:
     """
     Decodes error codes into human-readable messages.
 
@@ -99,7 +97,7 @@ def decode_errors(error_code):
     return ",".join(errors) if errors else "No errors"
 
 
-def transform_and_rename_registers(registers):
+def transform_and_rename_registers(registers: list) -> dict:
     """
     Transforms and renames the Modbus register values.
 

@@ -1,9 +1,9 @@
 from pymodbus.client import ModbusSerialClient
 from pymodbus.exceptions import ModbusException
 
-def read_modbus_registers(port_name):
+def read_modbus_registers(port_name: int) -> list:
     """
-    Reads the first 20 Modbus holding registers from the device.
+    Reads the Modbus holding registers from the device.
 
     :param str port_name: The name of the serial port
     :return: A list of register values if successful, None otherwise
