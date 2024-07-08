@@ -1,4 +1,4 @@
-# A Python Script to Read the SX3 Batteries Registers 
+# A Python Script to Read the SX3 Battery Registers 
 
 This Python script scans for available serial ports, prompts the user to select a port, and then reads the Modbus registers from the VM battery, which is connected via a USB to UART bridge. The script transforms and renames the Modbus register values, and then displays the results.
 
