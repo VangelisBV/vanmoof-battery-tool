@@ -44,13 +44,15 @@ If you don't have git installed:
 - Click on the "Code" button and download the repository as a zip file, then unzip it
 - Open a terminal window and enter the directory, for example on Windows:
     ```sh
-    cd C:\Users\YourUser\Downloads\vanmoof-battery-tool-main #Assuming you extracted the file in the Downloads directory
+    cd C:\Users\YourUser\Downloads\vanmoof-battery-tool-main 
+    #Assuming you extracted the file in the Downloads directory
 
 3. **Create a virtual environment (optional but recommended):**
     ```sh
     pip install virtualenv   
     python -m virtualenv venv
-    venv\Scripts\activate #On Linux, use: source venv/bin/activate 
+    venv\Scripts\activate 
+    #On Linux, use: source venv/bin/activate 
 
 4. **Install the required libraries:**
     ```sh
