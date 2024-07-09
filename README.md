@@ -2,6 +2,8 @@
 
 This Python script scans for available serial ports, prompts the user to select a port, and then reads the Modbus registers from the VM battery, which is connected via a USB to UART bridge. The script transforms and renames the Modbus register values, and then displays the results.
 
+**Note: The Battery Management System (BMS) must be operational to read its memory. If the battery is completely drained, this script will not work.
+
 
 ## Features
 
@@ -56,7 +58,8 @@ If you don't have git installed:
 ## Usage
 
 1. **Connect the battery to your PC using a USB to UART bridge according to the diagram (start from the battery side):**
-<image>
+![Connection diagramm](images/wiringTxRxGnd.png)
+![Example 1](images/exampleTxRxGnd.png)
 
 2. **Run the script:**
     ```sh
@@ -67,9 +70,10 @@ If you don't have git installed:
 - Enter the index number corresponding to the port your battery is connected to.
 
 4. **"Wake up" the battery:**
-The script will ask you to momentarily bridge the DET and the TEST pins of the battery 
+The script will ask you to momentarily bridge (connect and disconnect) the DET and the TEST pins of the battery 
 (Note: This will "activate" the battery for 10sec, meaning the discharge pins will have voltage for 10sec)
-<image>
+![Connection diagramm (DET - TEST)](images/wiringTestDet.png)
+![Example 2](images/exampleTestDet.png)
 
 5. **Read the results:**
 The registers values are transformed, renamed and then the results are displayed.
