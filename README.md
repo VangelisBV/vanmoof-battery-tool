@@ -15,10 +15,12 @@ This Python script scans for available serial ports, prompts the user to select 
 
 
 ## Requirements
-
+Hardware:
 - 1x USB to UART Bridge (CP2102)
 - 3x Female to male jumper wires
 - 1x Male to male jumper wire
+
+Software:
 - Python 3.6 or higher
 - Python virtualenv (optional)
 - Git (optional)
