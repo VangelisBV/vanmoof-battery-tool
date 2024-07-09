@@ -59,7 +59,8 @@ If you don't have git installed:
 
 1. **Connect the battery to your PC using a USB to UART bridge according to the diagram (start from the battery side):**
 ![Connection diagramm](images/wiringTxRxGnd.png)
-![Example 1](images/exampleTxRxGnd.png)
+![Example 1](images/exampleTxRxGnd.jpeg)
+
 
 2. **Run the script:**
     ```sh
@@ -73,7 +74,8 @@ If you don't have git installed:
 The script will ask you to momentarily bridge (connect and disconnect) the DET and the TEST pins of the battery 
 (Note: This will "activate" the battery for 10sec, meaning the discharge pins will have voltage for 10sec)
 ![Connection diagramm (DET - TEST)](images/wiringTestDet.png)
-![Example 2](images/exampleTestDet.png)
+![Example 2](images/exampleTestDet.jpeg)
+
 
 5. **Read the results:**
 The registers values are transformed, renamed and then the results are displayed.
