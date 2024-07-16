@@ -137,6 +137,7 @@ Research to expand the tool is ongoing and contributions are welcome! Please fee
 ## Acknowledgments
 - [PySerial](https://github.com/pyserial/pyserial)
 - [PyModbus](https://github.com/pymodbus-dev/pymodbus)
+- Many thanks to Daniel from [Danmoof](https://www.instagram.com/danmoof) for donating a cable harness that I use for tapping the communication wires
 
 
 ## Disclaimer
