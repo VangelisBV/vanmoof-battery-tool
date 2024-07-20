@@ -40,7 +40,7 @@ def main():
     Main function to list serial ports, choose a port, and read data from it.
     """
     display_v(6)
-    print("VB Tool v1.0.0")
+    print("VB Tool v1.0.1")
     print()
     ports = list_serial_ports()
     if not ports:
