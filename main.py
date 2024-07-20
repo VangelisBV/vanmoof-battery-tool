@@ -3,6 +3,7 @@ import serial
 from modbus_utils import read_modbus_registers
 from serial_utils import list_serial_ports, print_serial_ports, choose_serial_port
 from transform_utils import transform_and_rename_registers, REGISTER_NAMES, UNITS
+import time
 
 def read_from_serial(port_name: str):
     """
@@ -16,9 +17,10 @@ def read_from_serial(port_name: str):
             while True:
                 if ser.in_waiting > 0:
                     line = ser.readline().decode("utf-8").rstrip()
-                    print(line)
-                    print()
-                    if "ResetStatus" in line:
+                    if line:
+                        print(line)
+                        print()
+                        time.sleep(1)
                         break
         raw_registers = read_modbus_registers(port_name)
         if raw_registers:
