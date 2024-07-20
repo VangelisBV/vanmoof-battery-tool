@@ -20,7 +20,7 @@ def read_from_serial(port_name: str):
                     if line:
                         print(line)
                         print()
-                        time.sleep(1)
+                        time.sleep(2)
                         break
         raw_registers = read_modbus_registers(port_name)
         if raw_registers:
