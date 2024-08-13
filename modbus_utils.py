@@ -9,7 +9,7 @@ def read_modbus_registers(port_name: int) -> list:
     :return: A list of register values if successful, None otherwise
     :rtype: list
     """
-    client = ModbusSerialClient(method="rtu", port=port_name, baudrate=9600, timeout=1)
+    client = ModbusSerialClient(port=port_name, baudrate=9600, timeout=1)
     if not client.connect():
         print("Failed to connect to the Modbus device.")
         return None

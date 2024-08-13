@@ -1,2 +1,2 @@
-pyserial
-pymodbus
+pyserial===3.5
+pymodbus===3.7.0
